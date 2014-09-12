@@ -78,6 +78,21 @@ x = readLines(con)
 ```
 ---
 
+----------
+#4. The *collection* interface
+- file, opens a file;
+- gzfile, bzfile,url.
+- About the *open* parameter: -r (read); -w (writing); -a (appending)
+
+```R
+con = file('foo.txt','r');
+x = read.csv(con);
+close(con);
+#or
+con = url('http://www.baidu.com','r')
+x = readLines(con)
+```
+---
 
 
 
